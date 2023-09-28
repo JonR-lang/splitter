@@ -15,6 +15,7 @@ console.log(customNumber)
 function checkInputs() {
         errorMessage.textContent = "";
         numberPeople.classList.remove('error');
+        customNumber.value = '';
     if (billInput.value && (numberPeople.value && numberPeople.value !== '0')) {
         //The below code assigns and active class to the reset button, making it hoverable and clickable.
         resetBtn.classList.add('active');
