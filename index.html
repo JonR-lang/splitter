@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: teal;}
+    .attribution a { color: teal }
+  </style>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <figure class="logo">
+      <img src="./images/logo.svg" alt="">
+    </figure> 
+    <div class="container">
+      <div class="left">
+        <div class="bill-input-control input-control">
+          <label for="bill">Bill</label>
+          <figure class="icon-figure">
+            <img src="./images/icon-dollar.svg" alt="dollar-icon">
+          </figure>
+          <input type="number" name="bill" id="bill" placeholder="0">
+        </div>
+        <div class="tip-percent-control input-control">
+          <label for="custom">Select Tip%</label>
+          <div class="button-grid">
+            <button class="btn-percent">5%</button>
+            <button class="btn-percent">10%</button>
+            <button class="btn-percent">15%</button>
+            <button class="btn-percent">25%</button>
+            <button class="btn-percent">50%</button>
+            <input type="number" placeholder="Custom" name="custom-number" id="custom-number">
+          </div> 
+        </div>
+        <div class="people-number-control input-control">
+          <label for="numberpeople">Number of People</label>
+          <small class="error-message"></small>
+          <figure class="icon-figure">
+            <img src="./images/icon-person.svg" alt="person-icon">
+          </figure>
+          <input type="number" placeholder="0" id="numberpeople" name="people">
+        </div>
+      </div>
+      <div class="right">
+        <div class="amount-wrapper">
+          <div class="amount-flex">
+            <span>
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </span>
+            <span class="tip-amount">$0.00</span>
+          </div>
+          <div class="amount-flex">
+            <span>
+              <p>Total Amount</p>
+              <p>/ person</p>
+            </span>
+            <span class="total-amount">$0.00</span>
+          </div>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="attribution">
+    Coded by <a href="#">Johnny</a>.
+  </div>
+</body>
+</html>
